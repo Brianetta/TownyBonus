@@ -1,0 +1,15 @@
+name: ${project.name}
+main: net.simplycrafted.TownyBonus.TownyBonus
+version: ${project.version}
+author: Brianetta
+description: Provides a command to provide a bonus to all towns based on their population
+depends: Towny
+commands:
+    townybonus:
+        description: Grant bonus
+        usage: /<command> - increments Towny plot bonus by population
+        permission: townybonus.townybonus
+permissions:
+    townybonus.townybonus:
+    description: permission to use townybonus
+    default: op
